@@ -29,7 +29,7 @@ if (isset($_SESSION['name'])){
 		echo " <th>Mileage</th>";
 		echo " <th>Action</th>";
 		echo " </tr>";
-		while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+		while ($stmt->fetch(PDO::FETCH_ASSOC)) {
 			echo "<tr><td>";
 			echo(htmlentities($row['make']));
 			echo("</td><td>");
